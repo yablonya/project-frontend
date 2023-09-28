@@ -1,0 +1,42 @@
+.wrapper {
+    width: 500px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm input {
+    margin: 7px 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #AED2FF;
+    border-radius: 7px;
+    background-color: #E4F1FF;
+}
+.loginForm input::placeholder {
+    color: #575757;
+}
+
+.loginForm button {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #4d65c4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.loginForm button:hover {
+    background-color: #3E54AC;
+    scale: 1.01;
+}
+
+.wrapper > h4 {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}

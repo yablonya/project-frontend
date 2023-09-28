@@ -28,9 +28,13 @@ const Header = () => {
           },
           content: {
             width: "600px",
-            height: "800px",
+            height: "580px",
+            display: "flex",
+            alignItems: "center",
             margin: "auto",
-            border: "none"
+            padding: "40px 40px",
+            border: "none",
+            borderRadius: "10px",
           }
         }}>
         <RegistrationForm closeModal={closeModal}/>

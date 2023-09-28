@@ -27,3 +27,15 @@ export const registerUser = async (formData: User) => {
     console.error('An error occurred while adding new user', message)
   }
 }
+
+export const getUser = async (email: string, password: string) => {
+  try {
+    console.log(email, password)
+    const response = await axios.get(
+      `http://localhost:8080/users/get-user-info?email=${email}&password=${password}`
+    );
+    return response.data;
+  } catch (message) {
+    console.error('An error occurred while adding new user', message)
+  }
+}
