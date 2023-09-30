@@ -1,0 +1,57 @@
+.wrapper {
+    width: 50%;
+}
+
+.ifNoNotes {
+    margin-top: 15px;
+}
+
+.noteContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #AED2FF;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.noteContainer p {
+    border-left: 2px solid white;
+    padding: 0 10px 0 5px;
+}
+
+.addNoteForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.addNoteForm textarea {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0 10px;
+    padding: 10px 15px;
+    border: 1px solid #AED2FF;
+    border-radius: 7px;
+    background-color: #E4F1FF;
+}
+.addNoteForm textarea::placeholder {
+    color: #575757;
+}
+
+.addNoteForm button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #4d65c4;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.addNoteForm button:hover {
+    background-color: #3E54AC;
+    scale: 1.01;
+}

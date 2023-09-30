@@ -5,6 +5,6 @@ export interface User {
   surname: string;
   name: string;
   email: string,
-  notes?: string[],
-  progress?: ProgressRecord[],
+  notes: string[],
+  progress: ProgressRecord[],
 }

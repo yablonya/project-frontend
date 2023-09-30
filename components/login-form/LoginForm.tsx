@@ -29,9 +29,9 @@ const LoginForm:FC<LoginFormProps> = ({setUser}) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const num = checkForEmptiness(formData, setIsUserLogged);
+    const isFieldEmpty = checkForEmptiness(formData, setIsUserLogged);
 
-    if (num !== '2') {
+    if (isFieldEmpty !== '2') {
       const response: Promise<User | null> = getUser(formData.email, formData.password);
       const user: User | null = await response;
       user && setUser(user);

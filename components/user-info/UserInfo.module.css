@@ -1,0 +1,37 @@
+.wrapper {
+    width: 100%;
+}
+
+.divider {
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after{
+    flex: 1;
+    content: '';
+    height: 1px;
+    background-color: black;
+}
+
+.divider::before {
+    margin-right: 7px;
+}
+
+.divider::after {
+    margin-left: 7px;
+}
+
+.userNotLogged {
+    width: 700px;
+    text-align: center;
+    margin: 15px auto
+}
+
+.progressNotesBlock {
+    display: flex;
+    justify-content: space-between;
+}

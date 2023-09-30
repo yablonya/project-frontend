@@ -1,7 +1,22 @@
 .programContainer {
     width: 500px;
+    text-decoration: none;
     height: 250px;
     border-radius: 30px;
     margin: 20px 40px;
-    padding: 20px 40px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all 0.2s ease-in-out;
+}
+
+.programContainer:hover {
+    scale: 1.03;
+    box-shadow: 12px 12px 15px #adacac;
+}
+
+.programContainer h1 {
+    color: #383838;
+    padding-bottom: 120px;
 }

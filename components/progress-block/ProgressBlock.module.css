@@ -1,0 +1,64 @@
+.wrapper {
+    width: 40%;
+}
+
+.ifNoProgress {
+    margin-top: 15px;
+}
+
+.progressRecordContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #AED2FF;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.progressRecordContent {
+    padding: 0 10px 0 5px;
+}
+
+.progressRecordContent span{
+    padding-right: 15px;
+}
+
+.progressRecordContent span:last-child{
+    color: #575757;
+}
+
+.addProgressRecordForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.addProgressRecordForm input {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 1px solid #AED2FF;
+    border-radius: 7px;
+    background-color: #E4F1FF;
+}
+.addProgressRecordForm input::placeholder {
+    color: #575757;
+}
+
+.addProgressRecordForm button {
+    padding: 10px 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #4d65c4;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.addProgressRecordForm button:hover {
+    background-color: #3E54AC;
+    scale: 1.01;
+}

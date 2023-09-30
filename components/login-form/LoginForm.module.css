@@ -1,9 +1,11 @@
 .wrapper {
-    width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 .loginForm {
     display: flex;
+    width: 550px;
     flex-direction: column;
 }
 

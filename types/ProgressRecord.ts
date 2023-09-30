@@ -1,5 +1,5 @@
 export interface ProgressRecord {
-  height: number;
-  weight: number;
-  creationDate?: string;
+  height: string;
+  weight: string;
+  creationDate: string;
 }
