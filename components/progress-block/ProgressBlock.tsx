@@ -57,8 +57,8 @@ const ProgressBlock:FC<ProgressBlockProps> = ({
         progress.map((progressRecord, index) => (
           <div key={index} className={styles.progressRecordContainer}>
             <div className={styles.progressRecordContent}>
-              <span>Зріст: <u>{progressRecord.height} см</u></span>
-              <span>Вага: <u>{progressRecord.weight} кг</u></span>
+              <span>Height: <u>{progressRecord.height} cm</u></span>
+              <span>Weight: <u>{progressRecord.weight} kg</u></span>
               <span>{progressRecord.creationDate}</span>
             </div>
             <Image
@@ -71,30 +71,31 @@ const ProgressBlock:FC<ProgressBlockProps> = ({
           </div>
         ))
         :
-        <div className={styles.ifNoProgress}> У вас поки немає записів прогресу</div>
+        <div className={styles.ifNoProgress}>You have no progress records yet</div>
       }
       <form className={styles.addProgressRecordForm} onSubmit={handleSubmit}>
         <input
           type="text"
           name="height"
-          placeholder="Введіть зріст(в см)"
+          placeholder="Enter your height (cm)"
           value={formData.height}
           onChange={handleChange}
         />
         <input
           type="text"
           name="weight"
-          placeholder="Введіть вагу(в кг)"
+          placeholder="Enter your weight (kg)"
           value={formData.weight}
           onChange={handleChange}
         />
         <input
           type="date"
+          lang="en"
           name="creationDate"
           value={formData.creationDate}
           onChange={handleChange}
         />
-        <button type="submit">Додати</button>
+        <button type="submit">Add record</button>
       </form>
     </div>
   );

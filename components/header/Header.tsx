@@ -14,9 +14,10 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <h1>Header</h1>
+      <div style={{width: "124px"}}></div>
+      <h1>Training advisor</h1>
       <button className={styles.registerButton} onClick={() => setModalIsOpen(true)}>
-        Зареєструватись
+        Register
       </button>
       <Modal
         ariaHideApp={false}

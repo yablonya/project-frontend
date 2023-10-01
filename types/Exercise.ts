@@ -1,5 +1,5 @@
 export interface Exercise {
   name: string,
-  repetitions: string,
-  image: number[],
+  repetitions: number[],
+  image: string,
 }

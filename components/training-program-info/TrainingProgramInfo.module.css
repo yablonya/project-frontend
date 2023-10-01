@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1350px){
+    .wrapper {
+        flex-direction: column;
+    }
+}

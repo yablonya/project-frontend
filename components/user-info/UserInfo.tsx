@@ -14,14 +14,14 @@ const UserInfo = () => {
   return (
     <div className={styles.wrapper}>
       <LoginForm setUser={setUser}/>
-      <h2 className={styles.divider}>Прогрес та нотатки користувача</h2>
+      <h2 className={styles.divider}>User progress and notes</h2>
       {user ?
         <div className={styles.progressNotesBlock}>
           <ProgressBlock email={user.email} progress={user.progress} updateUser={setUser}/>
           <NotesBlock email={user.email} notes={user.notes} updateUser={setUser}/>
         </div>
         :
-        <h4 className={styles.userNotLogged}>Для отримання інформациї про користувача введіть email та пароль</h4>
+        <h4 className={styles.userNotLogged}>To receive information about the user, enter an email and password</h4>
       }
     </div>
   );

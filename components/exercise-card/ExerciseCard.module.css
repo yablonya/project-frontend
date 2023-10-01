@@ -1,0 +1,49 @@
+.exerciseContainer {
+    width: 100%;
+    border-radius: 7px;
+    background-color: #AED2FF;
+    padding: 15px 40px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textContainer {
+    padding-right: 15px;
+}
+
+.textContainer h3 {
+    font-size: 20px;
+}
+
+.repetitionsBlock div {
+    margin-top: 10px;
+}
+
+.durationBlock {
+    margin-top: 20px;
+}
+
+.exerciseImage {
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px #829dbf;
+}
+
+@media screen and (max-width: 880px){
+    .exerciseContainer {
+        flex-direction: column;
+    }
+
+    .textContainer {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1351px){
+    .exerciseContainer {
+        width: 45%;
+    }
+}

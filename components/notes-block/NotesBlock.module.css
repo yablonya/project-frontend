@@ -19,6 +19,8 @@
 .noteContainer p {
     border-left: 2px solid white;
     padding: 0 10px 0 5px;
+    overflow-wrap: break-word;
+
 }
 
 .addNoteForm {

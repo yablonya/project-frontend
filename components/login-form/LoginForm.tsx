@@ -48,22 +48,22 @@ const LoginForm:FC<LoginFormProps> = ({setUser}) => {
         <input
           type="email"
           name="email"
-          placeholder="Введіть email"
+          placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
         />
-        <h4>Пароль</h4>
+        <h4>Password</h4>
         <input
           type="password"
           name="password"
-          placeholder="Введіть пароль"
+          placeholder="Enter your password"
           value={formData.password}
           onChange={handleChange}
         />
-        <button type="submit">Показати інформацію</button>
+        <button type="submit">Show user info</button>
       </form>
       {isUserLogged === '2' &&
-          <h4 style={{color: "red"}}>Будь ласка заповніть всі поля!</h4>
+          <h4 style={{color: "red"}}>Please fill in all fields!</h4>
       }
     </div>
   );

@@ -47,20 +47,20 @@ const RegistrationForm: FC<RegistrationFormProps> = ({ closeModal }) => {
   return (
     <div className={styles.wrapper}>
       <form className={styles.registerForm} onSubmit={handleSubmit}>
-        <h4 className={styles.inputHeader}>Ім'я</h4>
+        <h4 className={styles.inputHeader}>Name</h4>
         <input
           type="text"
           name="name"
-          placeholder="Введіть ім'я"
+          placeholder="Enter your name"
           value={formData.name}
           onChange={handleChange}
         />
 
-        <h4>Прізвище</h4>
+        <h4>Surname</h4>
         <input
           type="text"
           name="surname"
-          placeholder="Введіть прізвище"
+          placeholder="Enter your surname"
           value={formData.surname}
           onChange={handleChange}
         />
@@ -69,29 +69,29 @@ const RegistrationForm: FC<RegistrationFormProps> = ({ closeModal }) => {
         <input
           type="email"
           name="email"
-          placeholder="Введіть email"
+          placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
         />
-        <h4>Пароль</h4>
+        <h4>Password</h4>
         <input
           type="password"
           name="password"
-          placeholder="Введіть пароль"
+          placeholder="Enter your password"
           value={formData.password}
           onChange={handleChange}
         />
         <div className={styles.controls}>
-          <button type="submit">Зареєструватись</button>
-          <button onClick={() => closeModal()} type="button">Закрити</button>
+          <button type="submit">Register</button>
+          <button onClick={() => closeModal()} type="button">Close</button>
         </div>
       </form>
 
       {isUserRegistered === '1' &&
-          <h4 style={{color: "green"}}>Користувача успішно зареєстровано!</h4>
+          <h4 style={{color: "green"}}>The user has been successfully registered!</h4>
       }
       {isUserRegistered === '2' &&
-          <h4 style={{color: "red"}}>Будь ласка заповніть всі поля!</h4>
+          <h4 style={{color: "red"}}>Please fill in all fields!</h4>
       }
     </div>
   );

@@ -1,4 +1,4 @@
-import {Exercise} from "../../project-front/types/Exercise";
+import {Exercise} from "@/types/Exercise";
 
 export interface TrainingProgram {
   name: string,

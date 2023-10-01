@@ -60,16 +60,16 @@ const NotesBlock:FC<NotesBlockProps> = ({
           </div>
         ))
         :
-        <div className={styles.ifNoNotes}> У вас поки немає нотатків</div>
+        <div className={styles.ifNoNotes}>You have no notes yet</div>
       }
       <form className={styles.addNoteForm} onSubmit={handleSubmit}>
         <textarea
           name="note"
-          placeholder="Введіть нотатку"
+          placeholder="Enter your note"
           value={formData.note}
           onChange={handleChange}
         />
-        <button type="submit">Додати</button>
+        <button type="submit">Add note</button>
       </form>
     </div>
   );

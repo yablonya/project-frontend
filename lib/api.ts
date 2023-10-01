@@ -1,6 +1,7 @@
 import axios from "axios";
 import {User} from "@/types/User";
 import {ProgressRecord} from "@/types/ProgressRecord";
+import {RegistrationData} from "@/types/RegistrationData";
 
 export const getAllTrainingPrograms = async () => {
   try {
@@ -20,7 +21,7 @@ export const getTrainingProgram = async (name: string) => {
   }
 }
 
-export const registerUser = async (formData: User) => {
+export const registerUser = async (formData: RegistrationData) => {
   try {
     const response = await axios.post('http://localhost:8080/users/register', formData);
     return response.data;
